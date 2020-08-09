@@ -93,25 +93,18 @@
             </div>
         </section>
     
-        <section id="alarm">
-            
-        </section>
-    
-        <section id="time">
-            <div class="timeDiv">
-                <h1 id="timer"></h1>
-                <select name="" id="hours"></select>
-                <select name="" id="minutes"></select>
-                <select name="" id="seconds"></select>
-                <select name="" id="ampm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
-            </div>
-            <div>
-                <button id="setalarm">Set Alarm</button>
-            </div>
-        </section>
+        <div class="container>
+        <input type="datetime-local" id="alarmTime">
+        <button type="button" onclick="setAlarm(this);" id="alarmButton" class="btnbtn-success"><span class="glyphiconglyphicon-time"></span> Set Alarm</button>                                                             
+        <br>
+
+        <div id="selectButton" style="display:none;">
+            <center>
+                <button onclick="snoozeAlarm();" class="btnbtn-warning"><span class="glyphiconglyphicon-pause"></span> Snooze 5 minutes</button>
+                <button onclick="stopAlarm();" class="btnbtn-danger"><span class="glyphiconglyphicon-stop"></span> Stop Alarm</button>
+        
+            </center>
+        </div>
     </div>
    
     <script src="index.js"></script>
